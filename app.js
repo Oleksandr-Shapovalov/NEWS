@@ -57,7 +57,7 @@ function customHttp() {
 const http = customHttp();
 const newsService = (function () {
   const apiKey = "31135756d77b4e3da54f9d1c12a2b3a4";
-  const apiUrl = "https://newsapi.org/v2";
+  const apiUrl = "http://newsapi.org/v2";
   return {
     topHeadLines(country = "ua", category = "general", cb) {
       http.get(
@@ -139,7 +139,7 @@ function clearContainer(container) {
 function newsItemTemplate({ urlToImage, title, url, description } = {}) {
   if (!urlToImage) {
     urlToImage =
-      "https://static5.depositphotos.com/1034327/459/i/600/depositphotos_4590772-stock-photo-word-news-old-plumb-letters.jpg";
+      "http://static5.depositphotos.com/1034327/459/i/600/depositphotos_4590772-stock-photo-word-news-old-plumb-letters.jpg";
   }
   return `
 <div class="col s12">
