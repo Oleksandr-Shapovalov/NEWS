@@ -139,7 +139,7 @@ function clearContainer(container) {
 function newsItemTemplate({ urlToImage, title, url, description } = {}) {
   if (!urlToImage) {
     urlToImage =
-      "http://static5.depositphotos.com/1034327/459/i/600/depositphotos_4590772-stock-photo-word-news-old-plumb-letters.jpg";
+      "https://static5.depositphotos.com/1034327/459/i/600/depositphotos_4590772-stock-photo-word-news-old-plumb-letters.jpg";
   }
   return `
 <div class="col s12">
