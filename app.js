@@ -57,7 +57,7 @@ function customHttp() {
 const http = customHttp();
 const newsService = (function () {
   const apiKey = "31135756d77b4e3da54f9d1c12a2b3a4";
-  const apiUrl = "http://newsapi.org/v2";
+  const apiUrl = "https://newsapi.org/v2";
   return {
     topHeadLines(country = "ua", category = "general", cb) {
       http.get(
